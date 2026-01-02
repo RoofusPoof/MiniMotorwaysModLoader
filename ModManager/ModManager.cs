@@ -21,8 +21,8 @@ namespace ModManagerMod
     public class ModManager : IMod
     {
         public string Name => "Mod Manager";
-        public string Version => "1.1.0";
-        public string Author => "ModLoader Team";
+        public string Version => "0.1.0-beta";
+        public string Author => "Roofus";
         
         private ModManagerUI _ui;
         private GameObject _modsButton;

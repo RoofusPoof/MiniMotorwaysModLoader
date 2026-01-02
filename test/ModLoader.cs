@@ -8,7 +8,7 @@ using UnityEngine;
 namespace MiniMotorwaysModLoader
 {
     /// <summary>
-    /// Mini Motorways Mod Loader v1.1.0
+    /// Mini Motorways Mod Loader v0.1.0-beta
     /// Developed by Roofus
     /// </summary>
     public static class ModLoaderEntry
@@ -21,11 +21,9 @@ namespace MiniMotorwaysModLoader
         {
             try
             {
-                Debug.Log("========================================");
-                Debug.Log("[MODLOADER] Mini Motorways Mod Loader v1.1.0");
+                Debug.Log("[MODLOADER] Mini Motorways Mod Loader v0.1.0-beta");
                 Debug.Log("[MODLOADER] Developed by Roofus");
                 Debug.Log("[MODLOADER] Loaded at: " + DateTime.Now.ToString());
-                Debug.Log("========================================");
                 
                 CreateSplashScreen();
                 InitializeModLoader();
@@ -88,7 +86,7 @@ namespace MiniMotorwaysModLoader
                 loadedCount++;
             }
             
-            Debug.Log("[MODLOADER] Successfully loaded " + LoadedMods.Count + " mod(s)");
+            Debug.Log("[MODLOADER] OK " + LoadedMods.Count + " mod(s)");
             _splashScreen?.SetComplete(LoadedMods.Count);
         }
         
@@ -299,7 +297,7 @@ namespace MiniMotorwaysModLoader
             GUIStyle versionStyle = new GUIStyle(_statusStyle);
             versionStyle.fontSize = 12;
             versionStyle.normal.textColor = new Color(0.6f, 0.6f, 0.6f);
-            GUI.Label(new Rect(x, y + 55, width, 20), "v1.1.0 by Roofus", versionStyle);
+            GUI.Label(new Rect(x, y + 55, width, 20), "v0.1.0-beta by Roofus", versionStyle);
             
             GUI.Label(new Rect(x, y + 90, width, 30), _status, _statusStyle);
             
