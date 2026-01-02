@@ -1,0 +1,28 @@
+# Ignore everything by default
+*
+
+# But not these directories and files
+!.gitignore
+!README.md
+
+# ModManager folder
+!ModManager/
+!ModManager/ModManager.cs
+!ModManager/ModConfig.cs
+!ModManager/IConfigurableMod.cs
+!ModManager/ModManager.csproj
+
+# test folder (ModLoader)
+!test/
+!test/ModLoader.cs
+!test/ModLoader.csproj
+
+# test/DllPatcher folder
+!test/DllPatcher/
+!test/DllPatcher/Program.cs
+!test/DllPatcher/DllPatcher.csproj
+
+# audio folder
+!audio/
+!audio/extract_audio.py
+!audio/48000

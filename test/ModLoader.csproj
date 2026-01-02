@@ -1,0 +1,44 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net472</TargetFramework>
+    <AssemblyName>ModLoader</AssemblyName>
+    <LangVersion>latest</LangVersion>
+    <OutputPath>bin\</OutputPath>
+    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+    <!-- Suppress version mismatch warnings for Unity assemblies -->
+    <NoWarn>CS1701;CS1702</NoWarn>
+    <!-- Disable auto-generated assembly info -->
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+    <GenerateTargetFrameworkAttribute>false</GenerateTargetFrameworkAttribute>
+  </PropertyGroup>
+  
+  <ItemGroup>
+    <!-- Exclude DllPatcher from this project -->
+    <Compile Remove="DllPatcher/**/*.cs" />
+    <!-- Exclude Harmony source files - we use precompiled DLL -->
+    <Compile Remove="Harmony/**/*.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <!-- Reference Mono.Cecil -->
+    <Reference Include="Mono.Cecil">
+      <HintPath>lib/HarmonyX/Mono.Cecil.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>/home/roofus/.local/share/Steam/steamapps/common/Mini Motorways/Mini Motorways_Data/Managed/UnityEngine.CoreModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.IMGUIModule">
+      <HintPath>/home/roofus/.local/share/Steam/steamapps/common/Mini Motorways/Mini Motorways_Data/Managed/UnityEngine.IMGUIModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.TextRenderingModule">
+      <HintPath>/home/roofus/.local/share/Steam/steamapps/common/Mini Motorways/Mini Motorways_Data/Managed/UnityEngine.TextRenderingModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+  </ItemGroup>
+</Project>
