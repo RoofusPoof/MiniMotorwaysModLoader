@@ -26,3 +26,10 @@
 !audio/
 !audio/extract_audio.py
 !audio/48000
+
+# Mods folder (example mods)
+!Mods/
+!Mods/RunINFO/
+!Mods/RunINFO/RunINFO.cs
+!Mods/RunINFO/IConfigurableMod.cs
+!Mods/RunINFO/RunINFO.csproj

@@ -1,0 +1,35 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net472</TargetFramework>
+    <AssemblyName>RunINFO</AssemblyName>
+    <LangVersion>latest</LangVersion>
+    <OutputPath>bin\</OutputPath>
+    <NoWarn>CS1701;CS1702</NoWarn>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+    <GenerateTargetFrameworkAttribute>false</GenerateTargetFrameworkAttribute>
+  </PropertyGroup>
+  
+  <ItemGroup>
+    <Reference Include="ModLoader">
+      <HintPath>/home/roofus/.local/share/Steam/steamapps/common/Mini Motorways/Mini Motorways_Data/Managed/ModLoader.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>/home/roofus/.local/share/Steam/steamapps/common/Mini Motorways/Mini Motorways_Data/Managed/UnityEngine.CoreModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.IMGUIModule">
+      <HintPath>/home/roofus/.local/share/Steam/steamapps/common/Mini Motorways/Mini Motorways_Data/Managed/UnityEngine.IMGUIModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.InputLegacyModule">
+      <HintPath>/home/roofus/.local/share/Steam/steamapps/common/Mini Motorways/Mini Motorways_Data/Managed/UnityEngine.InputLegacyModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TextRenderingModule">
+      <HintPath>/home/roofus/.local/share/Steam/steamapps/common/Mini Motorways/Mini Motorways_Data/Managed/UnityEngine.TextRenderingModule.dll</HintPath>
+    </Reference>
+    <Reference Include="App">
+      <HintPath>/home/roofus/.local/share/Steam/steamapps/common/Mini Motorways/Mini Motorways_Data/Managed/App.dll</HintPath>
+    </Reference>
+    <Reference Include="FixedMath">
+      <HintPath>/home/roofus/.local/share/Steam/steamapps/common/Mini Motorways/Mini Motorways_Data/Managed/FixedMath.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+</Project>
